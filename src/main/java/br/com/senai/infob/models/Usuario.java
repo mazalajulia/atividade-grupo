@@ -1,11 +1,14 @@
 package br.com.senai.infob.models;
 
 import java.time.LocalDate;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -31,16 +34,22 @@ public class Usuario {
     @Column(name = "senha")
     private String senha;
 
+    @ManyToOne
+    @JoinColumn(name = "endereco_id", nullable = false)
+    private Endereco endereco;
+
     public Usuario() {
     }
 
-    public Usuario(Integer id, String nomeCompleto, String cpf, LocalDate dataNascimento, String email, String senha) {
+    public Usuario(Integer id, String nomeCompleto, String cpf, LocalDate dataNascimento, String email, String senha,
+            Endereco endereco) {
         this.id = id;
         this.nomeCompleto = nomeCompleto;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
         this.email = email;
         this.senha = senha;
+        this.endereco = endereco;
     }
 
     public Integer getId() {
@@ -91,6 +100,13 @@ public class Usuario {
         this.senha = senha;
     }
 
-    
+    public Endereco getEndereco() {
+        return endereco;
+    }
 
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    
 }

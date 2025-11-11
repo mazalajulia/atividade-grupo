@@ -1,7 +1,9 @@
 package br.com.senai.infob.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +29,13 @@ public class UsuarioController {
     @PostMapping("/cadastro")
     public Usuario cadastro(@RequestBody Usuario usuario, @RequestParam String confirmarSenha) {
         return usuarioService.cadastrarUsuario(usuario, confirmarSenha);
+    }
+    @PutMapping("/atualizar/{id}")
+    public Usuario atualizar(@PathVariable Integer id, @RequestBody Usuario usuario) {
+        if(usuarioService.atualizar(usuario, id)) {
+            return usuario;
+        }
+        return null;
     }
 
 

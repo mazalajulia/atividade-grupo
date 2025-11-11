@@ -36,4 +36,14 @@ public class UsuarioService {
 
         return usuario;
     }
+    
+    public boolean atualizar(Usuario usuario, Integer id) {
+        Usuario usu = usuarioRepository.findById(id).get();
+        if (usu != null) {
+            usuario.setId(id);
+            usuarioRepository.save(usuario);
+            return true;
+        }
+        return false;
+    }
 }

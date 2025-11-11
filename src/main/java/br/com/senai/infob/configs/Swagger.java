@@ -10,7 +10,7 @@ import io.swagger.v3.oas.annotations.info.Info;
     info = @Info(
         title = "Sur Le Fond",
         version = "1.0",
-        description = "surlefond@hotmail.com.br"
+        description = "Ana Clara, Gabrielle, Giovana Baltar, Julia Mazala e Maria Alice"
     )
 )
 public class Swagger {
