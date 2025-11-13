@@ -1,12 +1,14 @@
-package br.com.senai.infob.services;
+package br.com.senai.infob.surlefond.services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import br.com.senai.infob.models.Endereco;
-import br.com.senai.infob.repositories.EnderecoRepository;
+import br.com.senai.infob.surlefond.models.Endereco;
+import br.com.senai.infob.surlefond.repositories.EnderecoRepository;
 
+@Service
 public class EnderecoService {
     
     @Autowired

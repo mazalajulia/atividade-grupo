@@ -1,4 +1,4 @@
-package br.com.senai.infob.models;
+package br.com.senai.infob.surlefond.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

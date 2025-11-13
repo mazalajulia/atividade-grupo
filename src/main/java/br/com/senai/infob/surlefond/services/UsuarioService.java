@@ -1,11 +1,12 @@
-package br.com.senai.infob.services;
+package br.com.senai.infob.surlefond.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import br.com.senai.infob.models.Usuario;
-import br.com.senai.infob.repositories.UsuarioRepository;
+import br.com.senai.infob.surlefond.models.Usuario;
+import br.com.senai.infob.surlefond.repositories.UsuarioRepository;
 
-
+@Service
 public class UsuarioService {
 
     @Autowired

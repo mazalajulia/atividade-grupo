@@ -1,10 +1,10 @@
-package br.com.senai.infob.repositories;
+package br.com.senai.infob.surlefond.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import br.com.senai.infob.models.Usuario;
+import br.com.senai.infob.surlefond.models.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {

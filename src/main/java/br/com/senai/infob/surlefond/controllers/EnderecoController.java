@@ -1,4 +1,4 @@
-package br.com.senai.infob.controllers;
+package br.com.senai.infob.surlefond.controllers;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.senai.infob.models.Endereco;
-import br.com.senai.infob.services.EnderecoService;
+import br.com.senai.infob.surlefond.models.Endereco;
+import br.com.senai.infob.surlefond.services.EnderecoService;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 

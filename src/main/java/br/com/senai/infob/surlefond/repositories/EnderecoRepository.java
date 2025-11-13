@@ -1,9 +1,9 @@
-package br.com.senai.infob.repositories;
+package br.com.senai.infob.surlefond.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.senai.infob.models.Endereco;
+import br.com.senai.infob.surlefond.models.Endereco;
 
 
 

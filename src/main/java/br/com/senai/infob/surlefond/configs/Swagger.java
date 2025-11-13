@@ -1,4 +1,4 @@
-package br.com.senai.infob.configs;
+package br.com.senai.infob.surlefond.configs;
 
 import org.springframework.context.annotation.Configuration;
 
